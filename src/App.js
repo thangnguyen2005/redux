@@ -11,13 +11,13 @@ function App() {
   const handleDeposit = () => {
     dispatch({
       type: NAP_TIEN,
-      payload: 10
+      payload: 50
     });
   }
   const handleDeposit1 = () => {
     dispatch({
       type: RUT_TIEN,
-      payload: -10
+      payload: 100
     });
   }
   return (
@@ -25,7 +25,7 @@ function App() {
       <h1>nap: {deposit_amount}</h1>
       <h1>rut: {withdraw_amount}</h1>
       <button onClick={handleDeposit}>Nap</button>
-      <button onClick={handleDeposit1}>rut</button>
+      <button onClick={handleDeposit1}>Rut</button>
 
     </div>
   );
